@@ -1,0 +1,70 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    height: 100vh;
+    padding: 3rem 1rem 0 1rem;
+}
+
+h1 {
+    margin: 2rem 0;
+}
+
+.btn-search {
+    padding: 0.5rem 1.2rem;
+    background: #75058b;
+    color: cornsilk;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
+
+.btn-search:active {
+    background: #b905dd;
+}
+
+#search {
+    padding: 0.5rem;
+    background: #333333;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    color: cornsilk;
+}
+
+#card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: max-content;
+    background: cornflowerblue;
+    padding: 1rem 2rem;
+    margin: 1rem auto;
+    border-radius: 1rem;
+}
+
+.avatar {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    margin-right: 2rem;
+    object-fit: cover;
+}
+
+.info-div {
+    text-align: left;
+}
+
+.info-div h3 {
+    margin-bottom: 0.5rem;
+}
+
+.info-div h5 {
+    margin: 0.5rem 0;
+}
