@@ -4,6 +4,12 @@
 // 3. Resolve the promise when data is fetched (onload)
 // 4. Reject the promise when error occured (onerror)
 
-function fetchData() {
-  // your code goes here
+function fetchData(url, requestType) {
+  return new Promise((resolve, reject) => {
+    let xhr = new XMLHttpRequest();
+    xhr.open(requestType, url);
+
+    xhr.onload = () => resolve("Resolved!");
+    xhr.onerror = () => reject("Rejected!");
+  });
 }
